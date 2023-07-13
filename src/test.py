@@ -1,5 +1,5 @@
 import argparse
-from pipeline_train import train_pipeline
+from pipeline_test import pipeline_test
 
 def main():
 
@@ -15,13 +15,16 @@ def main():
     
     ap.add_argument('-pm', '--path_model',
                     default= r'models/model_regressao_linear.pkl',
-                    help='Caminho para salvar o modelo treinado.')
+                    help='Caminho do modelo treinado.')
+    
+    ap.add_argument('-pr', '--path_predicted',
+                    default= r'results/predicted.csv',
+                    help='Caminho para salvar o arquivo com o resultado do modelo treinado.')
     
 
     args = vars(ap.parse_args())
 
-    train_pipeline(**args)
-
+    pipeline_test(**args)
 
 
 if __name__ == "__main__":
