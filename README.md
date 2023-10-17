@@ -29,8 +29,8 @@ python src/train.py
 Caso seja necessário alterar o caminho da pasta do dataset ou o caminho em que o modelo será salvo, pode-se enviar estes caminhos como argumento. Sendo eles:
 
 ```bash
--- path_dataset_train <caminho_dataset_treinamento> 
--- path_dataset_teste <caminho_dataset_teste> 
+--path_dataset_train <caminho_dataset_treinamento> 
+--path_dataset_teste <caminho_dataset_teste> 
 --path_model <caminho_modelo>
 ```
 
@@ -41,8 +41,8 @@ python src/test.py
 
 Caso seja necessário alterar o caminho da pasta do dataset, o caminho em que os modelos serão salvos, ou o caminho para salvar o arquivo predicted.csv, pode-se enviar estes caminhos como argumento. Sendo eles:
 ```bash
--- path_dataset_train <caminho_dataset_treinamento> 
--- path_dataset_teste <caminho_dataset_teste> 
+--path_dataset_train <caminho_dataset_treinamento> 
+--path_dataset_teste <caminho_dataset_teste> 
 --path_model <caminho_modelo>
 --path_predicted <caminho_predicted>
 ```
